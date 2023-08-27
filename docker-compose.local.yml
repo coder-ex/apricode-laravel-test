@@ -1,0 +1,47 @@
+version: "3.8"
+
+services:
+  php:
+    build: ./docker/php-fpm
+    container_name: apricode-php-fpm
+    image: apricode/php-fpm
+    volumes:
+      - ${PATH_HOST}:${PATH_CONTAINER}
+      - ${PATH_SERVICE}/logs/xdebug:/var/log/xdebug
+    working_dir: ${PATH_CONTAINER}
+    environment:
+      XDEBUG_CONFIG: "client_host=192.168.222.1 start_with_request=no client_port=9008"
+      XDEBUG_SESSION: "PHPVCS"
+      PHP_IDE_CONFIG: "serverName=school-server"
+    ports:
+      - "9010:9000"
+#      #- "192.168.222.1:80:80"
+#      #- "192.168.222.1:443:443"
+    networks:
+      - school_net
+
+  nginx:
+    build:
+      context: docker/nginx
+    image: apricode/http-nginx
+    container_name: apricode-http-nginx
+    depends_on:
+      - php
+    volumes:
+      - ${PATH_HOST}:${PATH_CONTAINER}
+      - ${PATH_SERVICE}/logs/nginx:/var/log/nginx
+    ports:
+      - "192.168.222.1:80:80"
+      - "192.168.222.1:443:443"
+    networks:
+      - school_net
+
+networks:
+  school_net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.222.0/28 # нам много адресов не нужно
+
+

@@ -1,0 +1,366 @@
+{
+	"info": {
+		"_postman_id": "869cb185-0fc6-420c-a48a-564267d3f9b2",
+		"name": "apricode",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Genres",
+			"item": [
+				{
+					"name": "Создать жанр игры",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"MO Rpg\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://school.loc/api/genres",
+							"protocol": "http",
+							"host": [
+								"school",
+								"loc"
+							],
+							"path": [
+								"api",
+								"genres"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Получить список жанров",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://school.loc/api/genres",
+							"protocol": "http",
+							"host": [
+								"school",
+								"loc"
+							],
+							"path": [
+								"api",
+								"genres"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Получить жанр по id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://school.loc/api/genres/2",
+							"protocol": "http",
+							"host": [
+								"school",
+								"loc"
+							],
+							"path": [
+								"api",
+								"genres",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Редактирование записи жанра",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"new GANRE 2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://school.loc/api/genres/3",
+							"protocol": "http",
+							"host": [
+								"school",
+								"loc"
+							],
+							"path": [
+								"api",
+								"genres",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Удалить запись из БД",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://school.loc/api/genres/4",
+							"protocol": "http",
+							"host": [
+								"school",
+								"loc"
+							],
+							"path": [
+								"api",
+								"genres",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Studio Developers",
+			"item": [
+				{
+					"name": "Создать разработчика",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Студия гейм-дизайна\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://school.loc/api/developers",
+							"protocol": "http",
+							"host": [
+								"school",
+								"loc"
+							],
+							"path": [
+								"api",
+								"developers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Получить список разработчиков",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://school.loc/api/developers",
+							"protocol": "http",
+							"host": [
+								"school",
+								"loc"
+							],
+							"path": [
+								"api",
+								"developers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Получить разработчика по id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://school.loc/api/developers/3",
+							"protocol": "http",
+							"host": [
+								"school",
+								"loc"
+							],
+							"path": [
+								"api",
+								"developers",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Редактирование данных разработчика",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Новый разработчик Игр\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://school.loc/api/developers/2",
+							"protocol": "http",
+							"host": [
+								"school",
+								"loc"
+							],
+							"path": [
+								"api",
+								"developers",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Удалить запись из БД",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://school.loc/api/developers/2",
+							"protocol": "http",
+							"host": [
+								"school",
+								"loc"
+							],
+							"path": [
+								"api",
+								"developers",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Games",
+			"item": [
+				{
+					"name": "Сохдать игру",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Conter Strike\",\n    \"genres\": [\"RPG\", \"new GANRE 2\"],\n    \"dev\": [\"Студия WEB дизайна\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://school.loc/api/games",
+							"protocol": "http",
+							"host": [
+								"school",
+								"loc"
+							],
+							"path": [
+								"api",
+								"games"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Получить список игр",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://school.loc/api/games",
+							"protocol": "http",
+							"host": [
+								"school",
+								"loc"
+							],
+							"path": [
+								"api",
+								"games"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Получить данные игры по id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://school.loc/api/games/2",
+							"protocol": "http",
+							"host": [
+								"school",
+								"loc"
+							],
+							"path": [
+								"api",
+								"games",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Редактирование данных игры",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Tundra v2\",\n    \"genres\": [\n        \"new GANRE 2\"\n    ],\n    \"dev\": [\n        \"Студия гейм-дизайна\"\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://school.loc/api/games/2",
+							"protocol": "http",
+							"host": [
+								"school",
+								"loc"
+							],
+							"path": [
+								"api",
+								"games",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

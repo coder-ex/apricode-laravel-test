@@ -1,0 +1,80 @@
+{
+  "genres": [
+    {
+      "name": "Экшен",
+      "slug": "action"
+    },
+    {
+      "name": "Приключения",
+      "slug": "adventure"
+    },
+    {
+      "name": "Ролевая игра",
+      "slug": "role-playing"
+    },
+    {
+      "name": "Стратегия",
+      "slug": "strategy"
+    },
+    {
+      "name": "Симулятор",
+      "slug": "simulation"
+    },
+    {
+      "name": "Спорт",
+      "slug": "sports"
+    },
+    {
+      "name": "Гонки",
+      "slug": "racing"
+    },
+    {
+      "name": "Файтинг",
+      "slug": "fighting"
+    },
+    {
+      "name": "Шутер",
+      "slug": "shooter"
+    },
+    {
+      "name": "Платформер",
+      "slug": "platformer"
+    },
+    {
+      "name": "Головоломка",
+      "slug": "puzzle"
+    },
+    {
+      "name": "Открытый мир",
+      "slug": "open-world"
+    },
+    {
+      "name": "Стелс",
+      "slug": "stealth"
+    },
+    {
+      "name": "Выживание",
+      "slug": "survival"
+    },
+    {
+      "name": "Хоррор",
+      "slug": "horror"
+    },
+    {
+      "name": "ММОРПГ",
+      "slug": "mmorpg"
+    },
+    {
+      "name": "Ритм",
+      "slug": "rhythm"
+    },
+    {
+      "name": "Визуальная новелла",
+      "slug": "visual-novel"
+    },
+    {
+      "name": "Образовательная",
+      "slug": "educational"
+    }
+  ]
+}
