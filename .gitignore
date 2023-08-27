@@ -21,7 +21,7 @@ composer.lock
 
 ## Docker
 #/docker
-#/.dockerignore
+/.dockerignore
 #/docker-compose.local.yml
 #/.env.local
 #/makefile
