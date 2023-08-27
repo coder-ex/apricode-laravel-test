@@ -25,6 +25,8 @@ composer.lock
 #/docker-compose.local.yml
 #/.env.local
 #/makefile
+/docker/mysql/*
+/docker/service/*
 
 ## services helper
 /public/phpinfo.php
